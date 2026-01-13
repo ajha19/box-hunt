@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Box Hunt Game</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+  <h2>Box Hunt</h2>
+
+  <div class="controls">
+    <button id="start">Start</button>
+    <button id="pause">Pause</button>
+    <button id="reset">Reset</button>
+
+    <!-- Input for position change time -->
+    <input
+      type="number"
+      id="intervalInput"
+      placeholder="Time (ms)"
+      value="1000"
+      min="100"
+    />
+  </div>
+
+  <div class="layout">
+
+    <!-- Play Area -->
+    <div id="playArea">
+      <div id="box"></div>
+    </div>
+
+    <!-- Result Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Mouse Click Number</th>
+          <th>Reaction Time (sec)</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.controls {
+  margin-bottom: 15px;
+}
+
+.controls button {
+  margin-right: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.controls input {
+  width: 120px;
+  padding: 6px;
+}
+
+.layout {
+  display: flex;
+  gap: 20px;
+}
+
+#playArea {
+  width: 400px;
+  height: 300px;
+  border: 2px solid black;
+  position: relative;
+}
+
+#box {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  position: absolute;
+  display: none;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  min-width: 220px;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f0f0f0;
+}
